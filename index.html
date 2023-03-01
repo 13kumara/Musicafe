@@ -1,0 +1,188 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Website for Musicafe</title>
+        <Meta charset="UTF-8">
+        <Meta name="Viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function stickyMenu() {
+                var sticky = document.getElementById('sticky');
+                if(window.pageYOffset >220) {
+                    sticky.classList.add('sticky');
+                }
+                else {
+                    sticky.classList.remove('sticky');
+                }
+            }
+            window.onscroll= function() {
+                stickyMenu();
+            }
+        </script>
+        <style>
+        body {
+            margin: 0;
+            font-family: system-ui;
+        }
+        .main {
+                background-image: url("https://images.pexels.com/photos/4552175/pexels-photo-4552175.jpeg?auto=compress&cs=tinysrgb&w=600");
+                height: max-content;
+                background-attachment:fixed;
+                background-position: center;
+                background-repeat:no-repeat;
+                background-size:cover;
+        }
+
+        .main1 {
+
+        }
+
+        .navbar {
+            width: 1200px;
+            height: 10px;
+            margin: auto;
+        }
+
+        .icon {
+            width: 100%;
+            float: left;
+            height: 10px;
+        }
+
+        .logo {
+            color: #ff7200;
+            font-size: 75px;
+        }
+
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .menu {
+            
+            text-align: right;
+        } 
+
+        .menu-ul {
+            margin: 0;
+            padding: 0;
+            display: inline;
+        }
+
+        .menu-ul li {
+            font-size: 17px;
+            list-style: none;
+            display: inline-block;
+            padding: 10px 10px 11px 10px;
+        }
+
+        .a-menu, .a-links {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu-ul li:hover {
+            background: #39B5E0;
+            transform: scale(1.0);
+        }
+
+        .search-box {
+            border: 1px solid white;
+            border-radius: 50px;
+            background: white;
+            width: max-content;
+            display: inline-block;
+            margin: 8px;
+        }
+
+        .search-box:hover {
+            box-shadow: 0 0 10px 2px #39B5E0;
+            border: 1px solid #39B5E0;
+        }
+
+        .search-input {
+            width: 250px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+            background: transparent;
+            margin: 15px 0 0 10px;
+        }
+
+        i {
+            font-size: 20px;
+            margin: 0 10px 0 0;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .para {
+            
+            text-align: left;
+        }
+        </style>
+    </head>
+    <body style="background-image: url('https://images.pexels.com/photos/4993254/pexels-photo-4993254.jpeg?auto=compress&cs=tinysrgb&w=600'); height: max-content;
+     background-attachment:fixed;
+     background-position: center;
+     background-repeat:no-repeat;
+     background-size: cover;">
+        <!--div class="main">
+            <div class="Page-title">Musicafe</div>
+        </div-->
+        <div class="main1">
+            <div class="navbar">
+                <div class="icon">
+                    <h2 class="logo">Musicafe</h2>
+                </div>
+            </div>
+        </div>
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <a href="#"  class="a-menu"><li>Home</li></a>
+                <a href="#"  class="a-menu"><li>About</li></a>
+                <a href="#Juice"  class="a-menu"><li>Fresh Juice</li></a>
+                <a href="#Icecreams"  class="a-menu"><li>Icereams</li></a>
+                <a href="#Snackes"  class="a-menu"><li>Snackes</li></a>
+            </ul>
+            <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search....." name="Search"
+                    class="search-input"/>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <!--div class="container">
+            <a href="#Juice">
+                <div class="categories">
+                    <img src="https://www.thestatesman.com/wp-content/uploads/2017/10/juice-many-2-e1641453528395.jpg">
+                    <div class="image-title">Juice</div>
+                </div>
+            </a>
+            <a href="#Icecreams">
+                <div class="categories">
+                    <img src="https://storage.googleapis.com/tc46storage/2021/05/b144d499-various-varieties-ice-cream-cones-various-varieties-ice-cream-cones-mint-blueberry-strawberry-pistachio-cherry-158155767.jpg">
+                    <div class="image-title">Icecreams</div>
+                </div>
+            </a>
+            <a href="#Snackes">
+                <div class="categories">
+                    <img src="https://media.istockphoto.com/id/1149135424/photo/group-of-sweet-and-salty-snacks-perfect-for-binge-watching.jpg?s=612x612&w=0&k=20&c=YAVqRyUJgj_nXpltYUPpaW_PYtd4v2TC5Mo0DtVFuoo=">
+                    <div class="image-title">Snackes</div>
+                </div>
+            </a>
+        </div-->
+        <br>
+        <p style="float: left; color: goldenrod;
+        font-size: 50px;">This is a shop for Music with coffee, Juices, Icecreams, Pupps and lots 
+         </p>
+    </body>
+</html>
